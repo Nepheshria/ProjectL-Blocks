@@ -1,0 +1,161 @@
+{
+  "code": "lcrackedrock",
+  "storageFlags": 5,
+  "attributes": {
+    "propickable": false,
+    "handbook": {
+      "extraSections": [
+        {
+          "title": "handbook-item-sources",
+          "text": "Full block off unbreakable rock that seamed to be enchanted by the labyrinth. Its been weathered by the ages."
+        }
+      ]
+    }
+  },
+  "variantgroups": [
+    { "code": "rock", "loadFromProperties": "block/rockwithdeposit" }
+  ],
+  "creativeinventory": {
+    "general": ["*"],
+    "terrain": ["*"],
+    "construction": ["*"],
+    "lblocks": ["*"]
+  },
+  "shape": { "base": "block/basic/cube" },
+  "drawtype": "cube",
+  "replaceable": 1,
+  "requiredMiningTier": 169,
+  "fertility": 0,
+  "texturesByType": {
+    "*-kimberlite": {
+      "all": {
+        "base": "game:block/stone/rock/{rock}1",
+        "overlays": ["game:block/overlay/rock/cracked1"],
+        "alternates": [
+          {
+            "base": "game:block/stone/rock/{rock}1",
+            "overlays": ["game:block/overlay/rock/cracked2"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}1",
+            "overlays": ["game:block/overlay/rock/cracked3"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}1",
+            "overlays": ["game:block/overlay/rock/cracked4"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}1",
+            "overlays": ["game:block/overlay/rock/cracked5"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}1",
+            "overlays": ["game:block/overlay/rock/cracked6"]
+          }
+        ]
+      }
+    },
+    "*-obsidian": {
+      "all": {
+        "base": "game:block/stone/rock/{rock}1",
+        "overlays": ["game:block/overlay/rock/cracked1"],
+        "alternates": [
+          {
+            "base": "game:block/stone/rock/{rock}1",
+            "overlays": ["game:block/overlay/rock/cracked2"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}1",
+            "overlays": ["game:block/overlay/rock/cracked3"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}1",
+            "overlays": ["game:block/overlay/rock/cracked4"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}1",
+            "overlays": ["game:block/overlay/rock/cracked5"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}1",
+            "overlays": ["game:block/overlay/rock/cracked6"]
+          }
+        ]
+      }
+    },
+    "*-suevite": {
+      "all": {
+        "base": "game:block/stone/rock/{rock}1",
+        "overlays": ["game:block/overlay/rock/cracked1"],
+        "alternates": [
+          {
+            "base": "game:block/stone/rock/{rock}2",
+            "overlays": ["game:block/overlay/rock/cracked2"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}1",
+            "overlays": ["game:block/overlay/rock/cracked3"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}2",
+            "overlays": ["game:block/overlay/rock/cracked4"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}1",
+            "overlays": ["game:block/overlay/rock/cracked5"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}2",
+            "overlays": ["game:block/overlay/rock/cracked6"]
+          }
+        ]
+      }
+    },
+    "*": {
+      "all": {
+        "base": "game:block/stone/rock/{rock}1",
+        "overlays": ["game:block/overlay/rock/cracked1"],
+        "alternates": [
+          {
+            "base": "game:block/stone/rock/{rock}2",
+            "overlays": ["game:block/overlay/rock/cracked2"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}3",
+            "overlays": ["game:block/overlay/rock/cracked3"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}4",
+            "overlays": ["game:block/overlay/rock/cracked4"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}3",
+            "overlays": ["game:block/overlay/rock/cracked5"]
+          },
+          {
+            "base": "game:block/stone/rock/{rock}2",
+            "overlays": ["game:block/overlay/rock/cracked6"]
+          }
+        ]
+      }
+    }
+  },
+  "sounds": {
+    "walk": "game:walk/stone",
+    "byTool": {
+      "Pickaxe": {
+        "hit": "game:block/rock-hit-pickaxe",
+        "break": "game:block/rock-break-pickaxe"
+      }
+    }
+  },
+  "dropsByType": {},
+  "heldTpIdleAnimation": "holdbothhandslarge",
+  "heldRightReadyAnimation": "heldblockready",
+  "heldTpUseAnimation": "twohandplaceblock",
+  "tpHandTransform": {
+    "translation": { "x": -1.23, "y": -0.91, "z": -0.8 },
+    "rotation": { "x": -2, "y": 25, "z": -78 },
+    "scale": 0.4
+  }
+}
