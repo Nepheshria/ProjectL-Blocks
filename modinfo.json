@@ -1,7 +1,7 @@
 {
   "type": "content",
-  "modid": "l-unbreakable-blocs",
-  "name": "Unbreakable Blocs",
+  "modid": "projectlblocks",
+  "name": "ProjectL Blocks",
   "authors": ["SleepyEyes"],
   "description": "Unbreakable version of the vanilla blocks for map making",
   "version": "1.0.0"
