@@ -1,6 +1,6 @@
 {
   "type": "content",
-  "modid": "projectlblocks",
+  "modid": "lblocks",
   "name": "ProjectL Blocks",
   "authors": ["SleepyEyes"],
   "description": "Unbreakable version of the vanilla blocks for map making",
