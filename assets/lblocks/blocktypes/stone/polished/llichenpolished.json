@@ -2,19 +2,73 @@
   "code": "llichenrockpolished",
   "replaceable": 120,
   "requiredMiningTier": 169,
+  "attributes": {
+    "propickable": false,
+    "canChisel": false,
+    "onTongTransform": {
+      "translation": {
+        "x": -2.4,
+        "y": -1.9,
+        "z": -1.95
+      },
+      "rotation": {
+        "x": -41,
+        "y": -2,
+        "z": -10
+      },
+      "scale": 0.35
+    },
+    "tongOpening": "wide",
+    "onMetalTongTransform": {
+      "translation": {
+        "x": -3,
+        "y": -1.85,
+        "z": -1.93
+      },
+      "rotation": {
+        "x": -42,
+        "y": -8,
+        "z": -10
+      },
+      "scale": 0.35
+    },
+    "handbook": {
+      "groupBy": [
+        "llichenrockpolished-*"
+      ],
+      "extraSections": [
+        {
+          "title": "lblocks:lblock-handbook-title",
+          "text": "lblocks:lblock-handbook-desc"
+        }
+      ]
+    }
+  },
   "variantgroups": [
     {
       "code": "rock",
-      "states": ["whitemarble", "greenmarble", "redmarble"],
+      "states": [
+        "whitemarble",
+        "greenmarble",
+        "redmarble"
+      ],
       "loadFromProperties": "block/rock"
     }
   ],
   "creativeinventory": {
-    "general": ["*"],
-    "construction": ["*"],
-    "lblocks": ["*"]
+    "general": [
+      "*"
+    ],
+    "construction": [
+      "*"
+    ],
+    "lblocks": [
+      "*"
+    ]
   },
-  "shape": { "base": "block/basic/cube" },
+  "shape": {
+    "base": "block/basic/cube"
+  },
   "drawtype": "cube",
   "heldTpIdleAnimation": "holdbothhandslarge",
   "heldRightReadyAnimation": "heldblockready",
@@ -22,20 +76,36 @@
   "textures": {
     "all": {
       "base": "game:block/stone/polishedrock/{rock}",
-      "overlays": ["game:block/overlay/lichen1"],
+      "overlays": [
+        "game:block/overlay/lichen1"
+      ],
       "alternates": [
         {
           "base": "game:block/stone/polishedrock/{rock}",
-          "overlays": ["game:block/overlay/lichen2"]
+          "overlays": [
+            "game:block/overlay/lichen2"
+          ]
         }
       ]
     },
-    "inside-north": { "base": "game:block/stone/polishedrock/{rock}-inside" },
-    "inside-east": { "base": "game:block/stone/polishedrock/{rock}-inside" },
-    "inside-south": { "base": "game:block/stone/polishedrock/{rock}-inside" },
-    "inside-west": { "base": "game:block/stone/polishedrock/{rock}-inside" },
-    "inside-up": { "base": "game:block/stone/polishedrock/{rock}-inside" },
-    "inside-down": { "base": "game:block/stone/polishedrock/{rock}-inside" }
+    "inside-north": {
+      "base": "game:block/stone/polishedrock/{rock}-inside"
+    },
+    "inside-east": {
+      "base": "game:block/stone/polishedrock/{rock}-inside"
+    },
+    "inside-south": {
+      "base": "game:block/stone/polishedrock/{rock}-inside"
+    },
+    "inside-west": {
+      "base": "game:block/stone/polishedrock/{rock}-inside"
+    },
+    "inside-up": {
+      "base": "game:block/stone/polishedrock/{rock}-inside"
+    },
+    "inside-down": {
+      "base": "game:block/stone/polishedrock/{rock}-inside"
+    }
   },
   "sounds": {
     "walk": "game:walk/stone",
@@ -47,8 +117,16 @@
     }
   },
   "tpHandTransform": {
-    "translation": { "x": -1.23, "y": -0.91, "z": -0.8 },
-    "rotation": { "x": -2, "y": 25, "z": -78 },
+    "translation": {
+      "x": -1.23,
+      "y": -0.91,
+      "z": -0.8
+    },
+    "rotation": {
+      "x": -2,
+      "y": 25,
+      "z": -78
+    },
     "scale": 0.4
   }
 }

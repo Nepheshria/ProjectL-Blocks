@@ -1,33 +1,104 @@
 {
   "code": "lcobblestonestairs",
-  "class": "BlockStairs",
   "attributes": {
-    "mapColorCode": "settlement",
-    "canChisel": true,
-    "chiselShapeFromCollisionBox": true,
-    "handbook": {
-      "groupBy": ["lcobblestonestairs-*-up-north-free"]
+    "propickable": false,
+    "canChisel": false,
+    "onTongTransform": {
+      "translation": {
+        "x": -2.4,
+        "y": -1.9,
+        "z": -1.95
+      },
+      "rotation": {
+        "x": -41,
+        "y": -2,
+        "z": -10
+      },
+      "scale": 0.35
+    },
+    "tongOpening": "wide",
+    "onMetalTongTransform": {
+      "translation": {
+        "x": -3,
+        "y": -1.85,
+        "z": -1.93
+      },
+      "rotation": {
+        "x": -42,
+        "y": -8,
+        "z": -10
+      },
+      "scale": 0.35
     },
     "partialAttachable": true,
     "liquidBarrierOnSidesByType": {
-      "*-up-north-*": [1.0, 0.5, 0.5, 0.5],
-      "*-up-south-*": [0.5, 0.5, 1.0, 0.5],
-      "*-up-west-*": [0.5, 0.5, 0.5, 1.0],
-      "*-up-east-*": [0.5, 1.0, 0.5, 0.5]
+      "*-up-north-*": [
+        1.0,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "*-up-south-*": [
+        0.5,
+        0.5,
+        1.0,
+        0.5
+      ],
+      "*-up-west-*": [
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "*-up-east-*": [
+        0.5,
+        1.0,
+        0.5,
+        0.5
+      ]
     },
-    "inContainerTexture": { "base": "game:block/stone/cobblestone/{rock}1" }
+    "inContainerTexture": {
+      "base": "game:block/stone/cobblestone/{rock}1"
+    },
+    "handbook": {
+      "groupBy": [
+        "lcobblestonestairs-*"
+      ],
+      "extraSections": [
+        {
+          "title": "lblocks:lblock-handbook-title",
+          "text": "lblocks:lblock-handbook-desc"
+        }
+      ]
+    }
   },
+  "class": "BlockStairs",
   "behaviors": [
     {
       "name": "WrenchOrientable",
-      "properties": { "baseCode": "cobblestonestairs-{rock}-*-{cover}" }
+      "properties": {
+        "baseCode": "cobblestonestairs-{rock}-*-{cover}"
+      }
     }
   ],
   "variantgroups": [
-    { "code": "rock", "loadFromProperties": "block/rockwithdeposit" },
-    { "loadFromProperties": "abstract/verticalorientation" },
-    { "loadFromProperties": "abstract/horizontalorientation" },
-    { "code": "cover", "states": ["free", "snow"] }
+    {
+      "code": "rock",
+      "loadFromProperties": "block/rockwithdeposit"
+    },
+    {
+      "loadFromProperties": "abstract/verticalorientation"
+    },
+    {
+      "loadFromProperties": "abstract/horizontalorientation"
+    },
+    {
+      "code": "cover",
+      "states": [
+        "free",
+        "snow"
+      ]
+    }
   ],
   "skipVariants": [
     "*-obsidian-*",
@@ -41,19 +112,57 @@
     "*-down-west-snow"
   ],
   "creativeinventory": {
-    "general": ["*-up-north-free"],
-    "construction": ["*-up-north-free"],
-    "lblocks": ["*-up-north-free"]
+    "general": [
+      "*-up-north-free"
+    ],
+    "construction": [
+      "*-up-north-free"
+    ],
+    "lblocks": [
+      "*-up-north-free"
+    ]
   },
   "sideSolidOpaqueAoByType": {
-    "*-up-north-*": { "all": false, "down": true, "north": true },
-    "*-up-west-*": { "all": false, "down": true, "west": true },
-    "*-up-south-*": { "all": false, "down": true, "south": true },
-    "*-up-east-*": { "all": false, "down": true, "east": true },
-    "*-down-north-free": { "all": false, "up": true, "north": true },
-    "*-down-south-free": { "all": false, "up": true, "south": true },
-    "*-down-west-free": { "all": false, "up": true, "west": true },
-    "*-down-east-free": { "all": false, "up": true, "east": true }
+    "*-up-north-*": {
+      "all": false,
+      "down": true,
+      "north": true
+    },
+    "*-up-west-*": {
+      "all": false,
+      "down": true,
+      "west": true
+    },
+    "*-up-south-*": {
+      "all": false,
+      "down": true,
+      "south": true
+    },
+    "*-up-east-*": {
+      "all": false,
+      "down": true,
+      "east": true
+    },
+    "*-down-north-free": {
+      "all": false,
+      "up": true,
+      "north": true
+    },
+    "*-down-south-free": {
+      "all": false,
+      "up": true,
+      "south": true
+    },
+    "*-down-west-free": {
+      "all": false,
+      "up": true,
+      "west": true
+    },
+    "*-down-east-free": {
+      "all": false,
+      "up": true,
+      "east": true
+    }
   },
   "shapebytype": {
     "*-up-north-free": {
@@ -115,7 +224,9 @@
   },
   "blockmaterial": "Stone",
   "textures": {
-    "sides": { "base": "game:block/stone/cobblestonestairs/{rock}" }
+    "sides": {
+      "base": "game:block/stone/cobblestonestairs/{rock}"
+    }
   },
   "replaceable": 160,
   "resistance": 4,
@@ -131,7 +242,14 @@
   },
   "collisionSelectionBoxesByType": {
     "*-down-*": [
-      { "x1": 0, "y1": 0.5, "z1": 0, "x2": 1, "y2": 1, "z2": 1 },
+      {
+        "x1": 0,
+        "y1": 0.5,
+        "z1": 0,
+        "x2": 1,
+        "y2": 1,
+        "z2": 1
+      },
       {
         "x1": 0,
         "y1": 0,
@@ -148,7 +266,14 @@
       }
     ],
     "*-up-*": [
-      { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.5, "z2": 1 },
+      {
+        "x1": 0,
+        "y1": 0,
+        "z1": 0,
+        "x2": 1,
+        "y2": 0.5,
+        "z2": 1
+      },
       {
         "x1": 0,
         "y1": 0.5,
@@ -169,8 +294,16 @@
   "heldRightReadyAnimation": "heldblockready",
   "heldTpUseAnimation": "twohandplaceblock",
   "tpHandTransform": {
-    "translation": { "x": -1.23, "y": -0.91, "z": -0.8 },
-    "rotation": { "x": -2, "y": 25, "z": -78 },
+    "translation": {
+      "x": -1.23,
+      "y": -0.91,
+      "z": -0.8
+    },
+    "rotation": {
+      "x": -2,
+      "y": 25,
+      "z": -78
+    },
     "scale": 0.4
   }
 }

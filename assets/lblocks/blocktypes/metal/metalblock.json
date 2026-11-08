@@ -1,0 +1,186 @@
+{
+  "code": "lmetalblock",
+  "variantgroups": [
+    {
+      "code": "state",
+      "states": [
+        "new",
+        "corroded"
+      ]
+    },
+    {
+      "code": "type",
+      "states": [
+        "plain",
+        "riveted"
+      ]
+    },
+    {
+      "code": "metal",
+      "loadFromProperties": "game:block/metal",
+      "states": [
+        "rusty-iron"
+      ]
+    }
+  ],
+  "attributes": {
+    "handbook": {
+      "groupBy": [
+        "lmetalblock-*"
+      ]
+    },
+    "canChisel": false,
+    "onTongTransform": {
+      "translation": {
+        "x": -2.4,
+        "y": -1.9,
+        "z": -1.95
+      },
+      "rotation": {
+        "x": -41,
+        "y": -2,
+        "z": -10
+      },
+      "scale": 0.35
+    },
+    "tongOpening": "wide",
+    "onMetalTongTransform": {
+      "translation": {
+        "x": -3,
+        "y": -1.85,
+        "z": -1.93
+      },
+      "rotation": {
+        "x": -42,
+        "y": -8,
+        "z": -10
+      },
+      "scale": 0.35
+    }
+  },
+  "drawtype": "cube",
+  "sidesolid": {
+    "all": true
+  },
+  "sideopaque": {
+    "all": true
+  },
+  "blockmaterial": "Metal",
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "decorative": [
+      "*"
+    ],
+    "lblocks": [
+      "*"
+    ]
+  },
+  "replaceable": 300,
+  "requiredMiningTier": 169,
+  "resistance": 2,
+  "lightAbsorption": 1,
+  "emitSideAo": {
+    "all": false
+  },
+  "skipVariants": [
+    "lmetalblock-new-*-rusty-iron",
+    "lmetalblock-new-plain-bismuth",
+    "lmetalblock-new-plain-brass",
+    "lmetalblock-new-plain-chromium",
+    "lmetalblock-new-plain-electrum",
+    "lmetalblock-new-plain-meteoriciron",
+    "lmetalblock-new-plain-molybdochalkos",
+    "lmetalblock-new-plain-platinum",
+    "lmetalblock-new-plain-nickel",
+    "lmetalblock-new-plain-stainlesssteel",
+    "lmetalblock-new-plain-tin",
+    "lmetalblock-new-plain-titanium",
+    "lmetalblock-new-plain-zinc",
+    "lmetalblock-new-plain-uranium",
+    "lmetalblock-corroded-*-bismuth",
+    "lmetalblock-corroded-*-chromium",
+    "lmetalblock-corroded-*-platinum",
+    "lmetalblock-corroded-*-nickel",
+    "lmetalblock-corroded-*-stainlesssteel",
+    "lmetalblock-corroded-*-titanium",
+    "lmetalblock-corroded-*-uranium"
+  ],
+  "texturesByType": {
+    "lmetalblock-new-plain-*": {
+      "all": {
+        "base": "game:block/metal/sheet-plain/{metal}1",
+        "alternates": [
+          {
+            "base": "game:block/metal/sheet-plain/{metal}2"
+          },
+          {
+            "base": "game:block/metal/sheet-plain/{metal}3"
+          },
+          {
+            "base": "game:block/metal/sheet-plain/{metal}4"
+          }
+        ]
+      }
+    },
+    "lmetalblock-new-riveted-*": {
+      "all": {
+        "base": "game:block/metal/sheet/{metal}1",
+        "alternates": [
+          {
+            "base": "game:block/metal/sheet/{metal}2"
+          },
+          {
+            "base": "game:block/metal/sheet/{metal}3"
+          },
+          {
+            "base": "game:block/metal/sheet/{metal}4"
+          },
+          {
+            "base": "game:block/metal/sheet/{metal}5"
+          }
+        ]
+      }
+    },
+    "lmetalblock-corroded-riveted-rusty-iron": {
+      "all": {
+        "base": "game:block/metal/tarnished/rusty-iron",
+        "overlays": [
+          "game:block/metal/rivetslarge4x4rusty"
+        ]
+      }
+    },
+    "lmetalblock-corroded-*": {
+      "all": {
+        "base": "game:block/metal/tarnished/{metal}",
+        "overlaysByType": {
+          "lmetalblock-corroded-riveted-*": [
+            "game:block/metal/rivetslarge4x4"
+          ]
+        }
+      }
+    }
+  },
+  "vertexFlagsByType": {
+    "lmetalblock-new-*-lead": {
+      "reflective": false
+    },
+    "lmetalblock-new-*-iron": {
+      "reflective": false
+    },
+    "lmetalblock-new-*": {
+      "reflective": true,
+      "windDataByType": {
+        "*-gold": 1,
+        "*": 1
+      }
+    }
+  },
+  "sounds": {
+    "place": "game:block/chute",
+    "break": "game:block/chute",
+    "hit": "game:block/chute",
+    "walk": "game:walk/stone"
+  }
+}

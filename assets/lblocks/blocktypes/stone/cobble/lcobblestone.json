@@ -1,25 +1,79 @@
 {
   "code": "lcobblestone",
-  "variantgroups": [
-    { "code": "rock", "loadFromProperties": "block/rockwithdeposit" }
-  ],
-  "skipVariants": ["*-halite", "*-scoria", "*-tuff", "*-travertine"],
   "attributes": {
-    "mapColorCode": "settlement",
+    "propickable": false,
+    "canChisel": false,
+    "onTongTransform": {
+      "translation": {
+        "x": -2.4,
+        "y": -1.9,
+        "z": -1.95
+      },
+      "rotation": {
+        "x": -41,
+        "y": -2,
+        "z": -10
+      },
+      "scale": 0.35
+    },
+    "tongOpening": "wide",
+    "onMetalTongTransform": {
+      "translation": {
+        "x": -3,
+        "y": -1.85,
+        "z": -1.93
+      },
+      "rotation": {
+        "x": -42,
+        "y": -8,
+        "z": -10
+      },
+      "scale": 0.35
+    },
     "handbook": {
-      "groupBy": ["cobblestone-*"]
+      "groupBy": [
+        "lcobblestone-*"
+      ],
+      "extraSections": [
+        {
+          "title": "lblocks:lblock-handbook-title",
+          "text": "lblocks:lblock-handbook-desc"
+        }
+      ]
     }
   },
+  "variantgroups": [
+    {
+      "code": "rock",
+      "loadFromProperties": "block/rockwithdeposit"
+    }
+  ],
+  "skipVariants": [
+    "*-halite",
+    "*-scoria",
+    "*-tuff",
+    "*-travertine"
+  ],
   "creativeinventory": {
-    "general": ["*"],
-    "construction": ["*"],
-    "lblocks": ["*"]
+    "general": [
+      "*"
+    ],
+    "construction": [
+      "*"
+    ],
+    "lblocks": [
+      "*"
+    ]
   },
-  "shape": { "base": "block/basic/cube" },
+  "shape": {
+    "base": "block/basic/cube"
+  },
   "drawtype": "cube",
   "blockmaterial": "Stone",
   "textures": {
-    "all": { "base": "game:block/stone/cobblestone/{rock}*" }
+    "all": {
+      "base": "game:block/stone/cobblestone/{rock}*"
+    }
   },
   "replaceable": 140,
   "requiredMiningTier": 169,
@@ -38,8 +92,16 @@
   "heldRightReadyAnimation": "heldblockready",
   "heldTpUseAnimation": "twohandplaceblock",
   "tpHandTransform": {
-    "translation": { "x": -1.23, "y": -0.91, "z": -0.8 },
-    "rotation": { "x": -2, "y": 25, "z": -78 },
+    "translation": {
+      "x": -1.23,
+      "y": -0.91,
+      "z": -0.8
+    },
+    "rotation": {
+      "x": -2,
+      "y": 25,
+      "z": -78
+    },
     "scale": 0.4
   }
 }

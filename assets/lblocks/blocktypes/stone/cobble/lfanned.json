@@ -1,5 +1,48 @@
 {
   "code": "lcobblestonefan",
+  "attributes": {
+    "mapColorCode": "settlement",
+    "propickable": false,
+    "canChisel": false,
+    "onTongTransform": {
+      "translation": {
+        "x": -2.4,
+        "y": -1.9,
+        "z": -1.95
+      },
+      "rotation": {
+        "x": -41,
+        "y": -2,
+        "z": -10
+      },
+      "scale": 0.35
+    },
+    "tongOpening": "wide",
+    "onMetalTongTransform": {
+      "translation": {
+        "x": -3,
+        "y": -1.85,
+        "z": -1.93
+      },
+      "rotation": {
+        "x": -42,
+        "y": -8,
+        "z": -10
+      },
+      "scale": 0.35
+    },
+    "handbook": {
+      "groupBy": [
+        "lcobblestonefan-*"
+      ],
+      "extraSections": [
+        {
+          "title": "lblocks:lblock-handbook-title",
+          "text": "lblocks:lblock-handbook-desc"
+        }
+      ]
+    }
+  },
   "variantgroups": [
     {
       "code": "rock",
@@ -26,19 +69,26 @@
         "whitemarble"
       ]
     },
-    { "code": "side", "loadFromProperties": "abstract/horizontalorientation" }
-  ],
-  "behaviors": [{ "name": "HorizontalOrientable" }],
-  "attributes": {
-    "mapColorCode": "settlement",
-    "handbook": {
-      "groupBy": ["lcobblestonefan-*-north"]
+    {
+      "code": "side",
+      "loadFromProperties": "abstract/horizontalorientation"
     }
-  },
+  ],
+  "behaviors": [
+    {
+      "name": "HorizontalOrientable"
+    }
+  ],
   "creativeinventory": {
-    "general": ["lcobblestonefan-*-north"],
-    "construction": ["lcobblestonefan-*-north"],
-    "lblocks": ["lcobblestonefan-*-north"]
+    "general": [
+      "lcobblestonefan-*-north"
+    ],
+    "construction": [
+      "lcobblestonefan-*-north"
+    ],
+    "lblocks": [
+      "lcobblestonefan-*-north"
+    ]
   },
   "shape": {
     "base": "game:block/basic/cube"
@@ -50,7 +100,11 @@
       "all": {
         "base": "game:block/stone/cobblestone/fanned/{rock}1",
         "rotation": 180,
-        "tiles": [{ "base": "game:block/stone/cobblestone/fanned/{rock}*" }],
+        "tiles": [
+          {
+            "base": "game:block/stone/cobblestone/fanned/{rock}*"
+          }
+        ],
         "tilesWidth": 2
       }
     },
@@ -58,7 +112,11 @@
       "all": {
         "base": "game:block/stone/cobblestone/fanned/{rock}1",
         "rotation": 0,
-        "tiles": [{ "base": "game:block/stone/cobblestone/fanned/{rock}*" }],
+        "tiles": [
+          {
+            "base": "game:block/stone/cobblestone/fanned/{rock}*"
+          }
+        ],
         "tilesWidth": 2
       }
     },
@@ -66,7 +124,11 @@
       "all": {
         "base": "game:block/stone/cobblestone/fanned/{rock}1",
         "rotation": 270,
-        "tiles": [{ "base": "game:block/stone/cobblestone/fanned/{rock}*" }],
+        "tiles": [
+          {
+            "base": "game:block/stone/cobblestone/fanned/{rock}*"
+          }
+        ],
         "tilesWidth": 2
       }
     },
@@ -74,7 +136,11 @@
       "all": {
         "base": "game:block/stone/cobblestone/fanned/{rock}1",
         "rotation": 90,
-        "tiles": [{ "base": "game:block/stone/cobblestone/fanned/{rock}*" }],
+        "tiles": [
+          {
+            "base": "game:block/stone/cobblestone/fanned/{rock}*"
+          }
+        ],
         "tilesWidth": 2
       }
     }

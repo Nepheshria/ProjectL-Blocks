@@ -1,6 +1,48 @@
 {
   "code": "ldrystone",
   "storageFlags": 5,
+  "attributes": {
+    "propickable": false,
+    "canChisel": false,
+    "onTongTransform": {
+      "translation": {
+        "x": -2.4,
+        "y": -1.9,
+        "z": -1.95
+      },
+      "rotation": {
+        "x": -41,
+        "y": -2,
+        "z": -10
+      },
+      "scale": 0.35
+    },
+    "tongOpening": "wide",
+    "onMetalTongTransform": {
+      "translation": {
+        "x": -3,
+        "y": -1.85,
+        "z": -1.93
+      },
+      "rotation": {
+        "x": -42,
+        "y": -8,
+        "z": -10
+      },
+      "scale": 0.35
+    },
+    "handbook": {
+      "groupBy": [
+        "ldrystone-*"
+      ],
+      "extraSections": [
+        {
+          "title": "lblocks:lblock-handbook-title",
+          "text": "lblocks:lblock-handbook-desc"
+        }
+      ]
+    }
+  },
   "variantgroups": [
     {
       "code": "rock",

@@ -1,19 +1,72 @@
 {
   "code": "lcobbleskull",
-  "variantgroups": [{ "loadFromProperties": "block/rock" }],
-  "creativeinventory": {
-    "general": ["*"],
-    "construction": ["*"],
-    "lblocks": ["*"]
-  },
-  "shape": { "base": "block/basic/cube" },
-  "drawtype": "cube",
+  "variantgroups": [
+    {
+      "loadFromProperties": "block/rock"
+    }
+  ],
   "attributes": {
-    "mapColorCode": "settlement"
+    "propickable": false,
+    "canChisel": false,
+    "onTongTransform": {
+      "translation": {
+        "x": -2.4,
+        "y": -1.9,
+        "z": -1.95
+      },
+      "rotation": {
+        "x": -41,
+        "y": -2,
+        "z": -10
+      },
+      "scale": 0.35
+    },
+    "tongOpening": "wide",
+    "onMetalTongTransform": {
+      "translation": {
+        "x": -3,
+        "y": -1.85,
+        "z": -1.93
+      },
+      "rotation": {
+        "x": -42,
+        "y": -8,
+        "z": -10
+      },
+      "scale": 0.35
+    },
+    "handbook": {
+      "groupBy": [
+        "lcobbleskull-*"
+      ],
+      "extraSections": [
+        {
+          "title": "handbook-item-sources",
+          "text": "lblocks:lblock-handbook-desc"
+        }
+      ]
+    }
   },
+  "creativeinventory": {
+    "general": [
+      "*"
+    ],
+    "construction": [
+      "*"
+    ],
+    "lblocks": [
+      "*"
+    ]
+  },
+  "shape": {
+    "base": "block/basic/cube"
+  },
+  "drawtype": "cube",
   "blockmaterial": "Stone",
   "textures": {
-    "all": { "base": "game:block/stone/cobbleskull/{rock}*" }
+    "all": {
+      "base": "game:block/stone/cobbleskull/{rock}*"
+    }
   },
   "replaceable": 150,
   "requiredMiningTier": 169,
@@ -32,8 +85,16 @@
   "heldRightReadyAnimation": "heldblockready",
   "heldTpUseAnimation": "twohandplaceblock",
   "tpHandTransform": {
-    "translation": { "x": -1.23, "y": -0.91, "z": -0.8 },
-    "rotation": { "x": -2, "y": 25, "z": -78 },
+    "translation": {
+      "x": -1.23,
+      "y": -0.91,
+      "z": -0.8
+    },
+    "rotation": {
+      "x": -2,
+      "y": 25,
+      "z": -78
+    },
     "scale": 0.4
   }
 }

@@ -4,18 +4,33 @@
   "behaviors": [
     {
       "name": "WrenchOrientable",
-      "properties": { "baseCode": "stonebrickstairs-{rock}-*-{cover}" }
+      "properties": {
+        "baseCode": "stonebrickstairs-{rock}-*-{cover}"
+      }
     }
   ],
   "variantgroups": [
     {
       "code": "rock",
-      "states": ["suevite", "travertine"],
+      "states": [
+        "suevite",
+        "travertine"
+      ],
       "loadFromProperties": "block/rock"
     },
-    { "loadFromProperties": "abstract/verticalorientation" },
-    { "loadFromProperties": "abstract/horizontalorientation" },
-    { "code": "cover", "states": ["free", "snow"] }
+    {
+      "loadFromProperties": "abstract/verticalorientation"
+    },
+    {
+      "loadFromProperties": "abstract/horizontalorientation"
+    },
+    {
+      "code": "cover",
+      "states": [
+        "free",
+        "snow"
+      ]
+    }
   ],
   "skipVariants": [
     "*-down-north-snow",
@@ -25,33 +40,93 @@
   ],
   "attributes": {
     "mapColorCode": "settlement",
-    "canChisel": true,
+    "canChisel": false,
     "chiselShapeFromCollisionBox": true,
     "partialAttachable": true,
     "handbook": {
-      "groupBy": ["stonebrickstairs-*-up-north-free"]
+      "groupBy": [
+        "stonebrickstairs-*-up-north-free"
+      ]
     },
     "liquidBarrierOnSidesByType": {
-      "*-up-north-*": [1.0, 0.5, 0.5, 0.5],
-      "*-up-south-*": [0.5, 0.5, 1.0, 0.5],
-      "*-up-west-*": [0.5, 0.5, 0.5, 1.0],
-      "*-up-east-*": [0.5, 1.0, 0.5, 0.5]
+      "*-up-north-*": [
+        1.0,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "*-up-south-*": [
+        0.5,
+        0.5,
+        1.0,
+        0.5
+      ],
+      "*-up-west-*": [
+        0.5,
+        0.5,
+        0.5,
+        1.0
+      ],
+      "*-up-east-*": [
+        0.5,
+        1.0,
+        0.5,
+        0.5
+      ]
     }
   },
   "creativeinventory": {
-    "general": ["*-up-north-free"],
-    "construction": ["*-up-north-free"],
-    "lblocks": ["*-up-north-free"]
+    "general": [
+      "*-up-north-free"
+    ],
+    "construction": [
+      "*-up-north-free"
+    ],
+    "lblocks": [
+      "*-up-north-free"
+    ]
   },
   "sideSolidOpaqueAoByType": {
-    "*-up-north-*": { "all": false, "down": true, "north": true },
-    "*-up-west-*": { "all": false, "down": true, "west": true },
-    "*-up-south-*": { "all": false, "down": true, "south": true },
-    "*-up-east-*": { "all": false, "down": true, "east": true },
-    "*-down-north-*": { "all": false, "up": true, "north": true },
-    "*-down-south-*": { "all": false, "up": true, "south": true },
-    "*-down-west-*": { "all": false, "up": true, "west": true },
-    "*-down-east-*": { "all": false, "up": true, "east": true }
+    "*-up-north-*": {
+      "all": false,
+      "down": true,
+      "north": true
+    },
+    "*-up-west-*": {
+      "all": false,
+      "down": true,
+      "west": true
+    },
+    "*-up-south-*": {
+      "all": false,
+      "down": true,
+      "south": true
+    },
+    "*-up-east-*": {
+      "all": false,
+      "down": true,
+      "east": true
+    },
+    "*-down-north-*": {
+      "all": false,
+      "up": true,
+      "north": true
+    },
+    "*-down-south-*": {
+      "all": false,
+      "up": true,
+      "south": true
+    },
+    "*-down-west-*": {
+      "all": false,
+      "up": true,
+      "west": true
+    },
+    "*-down-east-*": {
+      "all": false,
+      "up": true,
+      "east": true
+    }
   },
   "shapebytype": {
     "*-up-north-free": {
@@ -86,13 +161,22 @@
       "base": "game:block/basic/stairs/snow-normal",
       "rotateY": 270
     },
-    "*-down-north-free": { "base": "block/basic/stairs/flipped", "rotateY": 0 },
-    "*-down-west-free": { "base": "block/basic/stairs/flipped", "rotateY": 90 },
+    "*-down-north-free": {
+      "base": "block/basic/stairs/flipped",
+      "rotateY": 0
+    },
+    "*-down-west-free": {
+      "base": "block/basic/stairs/flipped",
+      "rotateY": 90
+    },
     "*-down-south-free": {
       "base": "block/basic/stairs/flipped",
       "rotateY": 180
     },
-    "*-down-east-free": { "base": "block/basic/stairs/flipped", "rotateY": 270 }
+    "*-down-east-free": {
+      "base": "block/basic/stairs/flipped",
+      "rotateY": 270
+    }
   },
   "faceCullModeByType": {
     "*-snow": "NeverCull",
@@ -100,7 +184,9 @@
   },
   "blockmaterial": "Stone",
   "textures": {
-    "sides": { "base": "game:block/stone/brick/{rock}*" }
+    "sides": {
+      "base": "game:block/stone/brick/{rock}*"
+    }
   },
   "replaceable": 160,
   "resistance": 4,
@@ -116,7 +202,14 @@
   },
   "collisionSelectionBoxesByType": {
     "*-down-*": [
-      { "x1": 0, "y1": 0.5, "z1": 0, "x2": 1, "y2": 1, "z2": 1 },
+      {
+        "x1": 0,
+        "y1": 0.5,
+        "z1": 0,
+        "x2": 1,
+        "y2": 1,
+        "z2": 1
+      },
       {
         "x1": 0,
         "y1": 0,
@@ -133,7 +226,14 @@
       }
     ],
     "*-up-*": [
-      { "x1": 0, "y1": 0, "z1": 0, "x2": 1, "y2": 0.5, "z2": 1 },
+      {
+        "x1": 0,
+        "y1": 0,
+        "z1": 0,
+        "x2": 1,
+        "y2": 0.5,
+        "z2": 1
+      },
       {
         "x1": 0,
         "y1": 0.5,
@@ -154,8 +254,16 @@
   "heldRightReadyAnimation": "heldblockready",
   "heldTpUseAnimation": "twohandplaceblock",
   "tpHandTransform": {
-    "translation": { "x": -1.23, "y": -0.91, "z": -0.8 },
-    "rotation": { "x": -2, "y": 25, "z": -78 },
+    "translation": {
+      "x": -1.23,
+      "y": -0.91,
+      "z": -0.8
+    },
+    "rotation": {
+      "x": -2,
+      "y": 25,
+      "z": -78
+    },
     "scale": 0.4
   }
 }
